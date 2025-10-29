@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de HTML, CSS e JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tela Inicial -->
+  <div id="start-screen" class="start-screen">
+    <div class="start-content">
+      <h1> Quiz de HTML, CSS e JavaScript</h1>
+      <p>Teste seus conhecimentos em tecnologia e veja o quanto você sabe!</p>
+      <button id="start-btn" class="btn">Começar o Quiz</button>
+    </div>
+  </div>
+
+  <!-- Tela de Perguntas -->
+  <div id="question-container" class="hidden quiz-container">
+    <div class="header">
+      <h2 id="question"></h2>
+      <div id="timer">15</div>
+    </div>
+    <div id="answers" class="answers"></div>
+    <button id="next-btn" class="btn hidden">Próxima Pergunta</button>
+  </div>
+
+  <!-- Tela de Resultado -->
+  <div id="result" class="hidden result-screen">
+    <h2>Resultado Final</h2>
+    <p>Você acertou <span id="score"></span> de 15 perguntas!</p>
+    <p id="message"></p>
+    <button id="restart-btn" class="btn">Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

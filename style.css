@@ -1,0 +1,138 @@
+/* ======== GERAL ======== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #196191);
+  color: #000000;
+}
+
+/* ======== TELA INICIAL ======== */
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #0c3a5f, #04213d);
+}
+
+.start-content {
+  background-color: #ffffffd9;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  max-width: 450px;
+  box-shadow: 0 4px 15px rgba(178, 179, 235, 0.15);
+}
+
+.start-content h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.start-content p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #4e9cff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 24px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3277db;
+}
+
+/* ======== QUIZ ======== */
+.quiz-container {
+  background-color: #5e81a1cc;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(245, 245, 245);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.answer-btn {
+  background-color: #e3eaff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.answer-btn:hover {
+  background-color: #d0dcff;
+}
+
+.correct {
+  background-color: #ffffff;
+  border-color: #3cb371;
+}
+
+.wrong {
+  background-color: #ffffff;
+  border-color: #ff4c4c;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#timer {
+  font-size: 20px;
+  background: #4e9cff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* ======== RESULTADO ======== */
+.result-screen {
+  background-color: #ffffffee;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.result-screen h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.result-screen p {
+  font-size: 18px;
+  margin: 8px 0;
+}
