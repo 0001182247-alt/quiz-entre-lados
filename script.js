@@ -1,8 +1,8 @@
 const perguntas = [
   // HTML
   { pergunta: "O que significa HTML?", respostas: [
-      { texto: "Linguagem de Marcação de Hipertexto", correta: true },
       { texto: "Linguagem de Programação de Internet", correta: false },
+      { texto: "Linguagem de Marcação de Hipertexto", correta: true },
       { texto: "Ferramenta de Edição de Texto", correta: false },
       { texto: "Código de Layout de Páginas", correta: false }
     ] },
@@ -19,16 +19,18 @@ const perguntas = [
       { texto: "img", correta: false }
     ] },
   { pergunta: "Qual tag cria uma lista ordenada?", respostas: [
-      { texto: "<ol>", correta: true },
+      
       { texto: "<ul>", correta: false },
       { texto: "<li>", correta: false },
+      { texto: "<ol>", correta: true },
       { texto: "<dl>", correta: false }
     ] },
   { pergunta: "Qual tag insere uma linha horizontal?", respostas: [
-      { texto: "<hr>", correta: true },
+      
       { texto: "<line>", correta: false },
       { texto: "<br>", correta: false },
-      { texto: "<border>", correta: false }
+      { texto: "<border>", correta: false },
+      { texto: "<hr>", correta: true }
     ] },
 
   // CSS
@@ -39,14 +41,16 @@ const perguntas = [
       { texto: "background", correta: false }
     ] },
   { pergunta: "Qual propriedade muda o tamanho da fonte?", respostas: [
-      { texto: "font-size", correta: true },
+     
       { texto: "text-size", correta: false },
       { texto: "font-style", correta: false },
-      { texto: "size", correta: false }
+      { texto: "size", correta: false },
+      { texto: "font-size", correta: true }
     ] },
   { pergunta: "Como deixar o texto em negrito no CSS?", respostas: [
-      { texto: "font-weight: bold;", correta: true },
+      
       { texto: "font-style: bold;", correta: false },
+      { texto: "font-weight: bold;", correta: true },
       { texto: "text-bold: true;", correta: false },
       { texto: "bold: yes;", correta: false }
     ] },
@@ -57,9 +61,10 @@ const perguntas = [
       { texto: "letter-spacing", correta: false }
     ] },
   { pergunta: "Como aplicar estilo a todos os parágrafos?", respostas: [
-      { texto: "p {}", correta: true },
+      
       { texto: ".p {}", correta: false },
       { texto: "#p {}", correta: false },
+      { texto: "p {}", correta: true },
       { texto: "paragraph {}", correta: false }
     ] },
 
@@ -71,10 +76,11 @@ const perguntas = [
       { texto: "print()", correta: false }
     ] },
   { pergunta: "Como criamos uma variável em JavaScript?", respostas: [
-      { texto: "var, let ou const", correta: true },
+      
       { texto: "variable", correta: false },
       { texto: "v", correta: false },
-      { texto: "criar", correta: false }
+      { texto: "criar", correta: false },
+      { texto: "var, let ou const", correta: true }
     ] },
   { pergunta: "Qual símbolo indica um comentário de uma linha?", respostas: [
       { texto: "//", correta: true },
@@ -83,9 +89,10 @@ const perguntas = [
       { texto: "<!-- -->", correta: false }
     ] },
   { pergunta: "Qual função mostra um alerta na tela?", respostas: [
-      { texto: "alert()", correta: true },
+      
       { texto: "mensagem()", correta: false },
       { texto: "mostrar()", correta: false },
+      { texto: "alert()", correta: true },
       { texto: "aviso()", correta: false }
     ] },
   { pergunta: "O que o operador === faz?", respostas: [
@@ -111,7 +118,7 @@ const timerElement = document.getElementById("timer");
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let timeLeft = 15;
+let timeLeft = 60;
 
 startBtn.addEventListener("click", () => {
   startScreen.classList.add("hidden");
@@ -129,7 +136,7 @@ function startQuiz() {
 
 function showQuestion() {
   clearInterval(timer);
-  timeLeft = 15;
+  timeLeft = 60;
   timerElement.textContent = timeLeft;
   startTimer();
 
